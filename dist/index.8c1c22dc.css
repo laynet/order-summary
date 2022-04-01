@@ -1,0 +1,125 @@
+@import "https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("pattern-background-desktop.ba4c5167.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  justify-content: center;
+  align-items: center;
+  font-family: Red Hat Display, sans-serif;
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p {
+  color: #7281a7;
+  font-size: 1rem;
+}
+
+h1 {
+  margin: 50px 48px 25px;
+}
+
+h2 {
+  margin-bottom: 6px;
+  font-size: 21px;
+}
+
+.cancel-cta {
+  margin-bottom: 50px;
+}
+
+.cancel-cta a {
+  color: #7280a7;
+  text-decoration: none;
+}
+
+.cancel-cta a:hover {
+  color: #000;
+}
+
+button {
+  width: 354px;
+  height: 50px;
+  background: #3829e0;
+  border-width: 0;
+  border-radius: 11px;
+  align-items: center;
+  margin-bottom: 35px;
+  box-shadow: 0 20px 20px #382ae131;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #756af1;
+}
+
+button p {
+  color: #fff;
+  font-weight: 900;
+}
+
+.flex {
+  align-items: center;
+  display: flex;
+}
+
+.card {
+  text-align: center;
+  max-width: 41%;
+  background: #fff;
+  border-radius: 20px;
+  justify-content: center;
+  margin: auto;
+  box-shadow: 0 40px 40px -20px #0d30bd27;
+}
+
+.card-hero {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.hero-text {
+  margin: 25px 50px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.plan-card {
+  width: 354px;
+  background: #fafbff;
+  border-radius: 11px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto 30px;
+  padding: 30px;
+}
+
+.plan-card a:hover {
+  color: #756af1;
+  text-decoration: none;
+}
+
+.plan-card img {
+  margin-right: 18px;
+}
+
+.pc-header {
+  flex-direction: column;
+  align-items: baseline;
+}
+
+/*# sourceMappingURL=index.8c1c22dc.css.map */
