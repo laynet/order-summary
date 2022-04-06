@@ -16,6 +16,13 @@ body {
   display: flex;
 }
 
+@media only screen and (max-width: 375px) {
+  body {
+    max-width: 327px;
+    justify-content: center;
+  }
+}
+
 p {
   color: #717fa6;
   font-size: 1rem;

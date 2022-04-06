@@ -21,6 +21,8 @@ $white: #FFFFFF;
     box-sizing: border-box;
 }
 
+
+
 body {
     background-image: url('../images/pattern-background-desktop.svg');
     background-repeat:no-repeat;
@@ -38,6 +40,10 @@ body {
     //     background-image: url('../images/pattern-background-mobile.svg');
     //     background-size: contain;
     // }
+    @media only screen and (max-width: 375px) {
+        max-width: 327px;
+        justify-content: center;
+    }
 
 }
 
@@ -153,9 +159,8 @@ a:hover, a:active {
     max-width: 450px;
     // max-height: 80vh;
 
-    // @media (max-width: 376px) {
-    //     max-width: 327px;
-    // }
+    
+    
 }
 
 .card-content {
