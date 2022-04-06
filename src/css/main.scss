@@ -3,11 +3,11 @@
 $font-family: 'Red Hat Display', sans-serif;
 
 $pale-blue: hsl(225, 100%, 94%);
-$bright-blue: hsl(245, 75%, 52%);
+$bright-blue: #382AE1;
 $v-pale-blue: hsl(225, 100%, 98%);
-$desaturated-blue: hsl(224, 23%, 55%);
+$desaturated-blue: #717FA6;
 $dark-blue: hsl(223, 47%, 23%);
-$light-purple: hsla(245, 83%, 68%, 1);
+$light-purple: #766CF1;
 $light-gray: hsla(223, 23%, 55%, 1);
 $lightest-gray: hsla(228, 100%, 99%, 1);
 
@@ -27,8 +27,8 @@ body {
     background-size: contain;
     // background-position: center center;
     // position: relative;
-    width: 100vw;
-    height: 100vh;
+    // width: 100vw;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,64 +41,101 @@ body {
 
 }
 
-img {
-    max-width: 100%;
-    // width: 100%;
-    height: auto;
-    display: block; 
-
-}
+// img {
+//     display: block; 
+// }
 
 p {
    font-size: 1rem;
-   color: $light-gray; 
+   color: $desaturated-blue; 
 }
 
 h1 {
-    margin: 50px 48px 25px;
+    margin-bottom: 1.5rem;
 }
 
 h2 {
-  font-size: 21px;
+  font-size: 1.3rem;
   margin-bottom: 6px;
    
 }
 
-.cancel-cta {
-    margin-bottom: 50px;
-    a {
-        text-decoration: none;
-        color: $desaturated-blue; 
+// .cancel-cta {
+//     margin-bottom: 50px;
+//     a {
+//         text-decoration: none;
+//         color: $desaturated-blue; 
 
-        &:hover {
-            color:black;
-        }
-    }
+//         &:hover {
+//             color:black;
+//         }
+//     }
+// }
+a:hover, a:active {
+    cursor: pointer
 }
 
 
+.change-cta {
+    color: $bright-blue;
+    text-decoration: underline; 
 
-button {
+    &:hover, &:active {
+        color: $light-purple;
+        text-decoration: none;
+    }
+}
+
+.cancel-cta {
+    color: $desaturated-blue;
+
+    &:hover, &:active {
+        color: black;
+    }
+}
+
+.payment-cta {
     border-radius: 11px;
     background: $bright-blue;
     box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
-    width: 354px;
-    height: 50px;
-    align-items: center;
-    border-width: 0;
-    margin-bottom: 35px;
+    // width: 100%;
+    display: block;
+    padding: 15px 102px;
+    color: $white;
 
-    &:hover {
-        background: $light-purple;
-        cursor: pointer;
-    }
-    
-
-    p {
-        color: $white;
-        font-weight: 900;
+    &:hover, &:active {
+        background: $light-purple
     }
 }
+
+.cancel-cta {
+    display: block;
+    margin-top: 40px;
+}
+
+
+
+// button {
+//     border-radius: 11px;
+//     background: $bright-blue;
+//     box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+//     width: 354px;
+//     height: 50px;
+//     align-items: center;
+//     border-width: 0;
+//     margin-bottom: 35px;
+
+//     &:hover {
+//         background: $light-purple;
+//         cursor: pointer;
+//     }
+    
+
+//     p {
+//         color: $white;
+//         font-weight: 900;
+//     }
+// }
 
 .flex {
     display: flex;
@@ -113,12 +150,16 @@ button {
     justify-content: center;
     margin: auto;
     // max-width: 60vw;
-    max-width: 41%;
+    max-width: 450px;
     // max-height: 80vh;
 
     // @media (max-width: 376px) {
     //     max-width: 327px;
     // }
+}
+
+.card-content {
+    padding: 48px;
 }
 
 .card-hero {
@@ -128,7 +169,7 @@ button {
 }
 
 .hero-text {
-    margin: 25px 50px;
+    margin-bottom: 1rem;
     line-height: 26px;
     font-weight: 500;
 }
@@ -138,19 +179,14 @@ button {
     border-radius: 11px;
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
+    padding: 25px;
     margin: auto;
-    width: 354px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-
-
-    & a:hover {
-        text-decoration: none;
-        color: $light-purple;
-    }
+    // width: 354px;
+    width: 100%;
+    // margin-top: 20px;
+    margin-bottom: 32px;
     
-    img {
+    .icon{
         margin-right: 18px;
     }
     
@@ -161,6 +197,12 @@ button {
     align-items: baseline;
     // margin: 0;
 }
+
+// @media screen and (min-width: 768px) {
+//     .bing-bong {
+//       max-width: 75%;
+//     }
+//   }
 
 
 
