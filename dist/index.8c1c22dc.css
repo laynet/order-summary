@@ -16,13 +16,6 @@ body {
   display: flex;
 }
 
-@media only screen and (max-width: 375px) {
-  body {
-    max-width: 327px;
-    justify-content: center;
-  }
-}
-
 p {
   color: #717fa6;
   font-size: 1rem;
@@ -125,6 +118,12 @@ a:hover, a:active {
 .pc-header {
   flex-direction: column;
   align-items: baseline;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    max-width: 327px;
+  }
 }
 
 /*# sourceMappingURL=index.8c1c22dc.css.map */
