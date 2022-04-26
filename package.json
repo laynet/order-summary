@@ -1,9 +1,13 @@
+
 {
+  "homepage": "https://laynet.github.io/order-summary/",
   "name": "order-summary",
   "version": "1.0.0",
   "description": "![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)",
   "source": "./src/index.html",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "dev": "parcel"
   },
   "keywords": [],
