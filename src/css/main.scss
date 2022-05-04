@@ -2,17 +2,12 @@
 
 $font-family: 'Red Hat Display', sans-serif;
 
-$pale-blue: hsl(225, 100%, 94%);
+
 $bright-blue: #382AE1;
-$v-pale-blue: hsl(225, 100%, 98%);
 $desaturated-blue: #717FA6;
-$dark-blue: hsl(223, 47%, 23%);
+$dark-blue: #1F2E55;
 $light-purple: #766CF1;
-$light-gray: hsla(223, 23%, 55%, 1);
-$lightest-gray: hsla(228, 100%, 99%, 1);
-
-
-
+$lightest-gray: #F7F9FF;
 $white: #FFFFFF;
 
 * {
@@ -24,195 +19,150 @@ $white: #FFFFFF;
 
 
 body {
-    background-image: url('../images/pattern-background-desktop.svg');
-    background-repeat:no-repeat;
-    background-size: contain;
-    // background-position: center center;
-    // position: relative;
-    // width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: $font-family;
-    
-    // @media (min-width: 376px) {
-    //     background-image: url('../images/pattern-background-mobile.svg');
-    //     background-size: contain;
-    // }
-    
-
 }
-
-// img {
-//     display: block; 
-// }
-
-p {
-   font-size: 1rem;
-   color: $desaturated-blue; 
-}
-
-h1 {
-    margin-bottom: 1.5rem;
-}
-
-h2 {
-  font-size: 1.3rem;
-  margin-bottom: 6px;
-   
-}
-
-// .cancel-cta {
-//     margin-bottom: 50px;
-//     a {
-//         text-decoration: none;
-//         color: $desaturated-blue; 
-
-//         &:hover {
-//             color:black;
-//         }
-//     }
-// }
-a:hover, a:active {
-    cursor: pointer
-}
-
-
-.change-cta {
-    color: $bright-blue;
-    text-decoration: underline; 
-
-    &:hover, &:active {
-        color: $light-purple;
-        text-decoration: none;
-    }
-}
-
-.cancel-cta {
-    color: $desaturated-blue;
-
-    &:hover, &:active {
-        color: black;
-    }
-}
-
-.payment-cta {
-    border-radius: 11px;
-    background: $bright-blue;
-    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
-    // width: 100%;
-    display: block;
-    padding: 15px 102px;
-    color: $white;
-
-    &:hover, &:active {
-        background: $light-purple
-    }
-}
-
-.cancel-cta {
-    display: block;
-    margin-top: 40px;
-}
-
-
-
-// button {
-//     border-radius: 11px;
-//     background: $bright-blue;
-//     box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
-//     width: 354px;
-//     height: 50px;
-//     align-items: center;
-//     border-width: 0;
-//     margin-bottom: 35px;
-
-//     &:hover {
-//         background: $light-purple;
-//         cursor: pointer;
-//     }
-    
-
-//     p {
-//         color: $white;
-//         font-weight: 900;
-//     }
-// }
 
 .flex {
     display: flex;
     align-items: center;
 }
 
-.card {
-    background: $white;
-    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
-    border-radius: 20px;
-    text-align: center;
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: auto;
-    // max-width: 60vw;
-    max-width: 450px;
-    // max-height: 80vh;
+    align-items: center;
+    background-image: url('../images/pattern-background-mobile.svg');
+    background-repeat:no-repeat;
+    background-size: contain;
 
-    
+    @media (min-width: 375px) {
+        background-image: url('../images/pattern-background-desktop.svg');
+    }
     
 }
 
-.card-content {
-    padding: 48px;
+.card {
+    max-width: 327px;
+    border-radius: 20px;
+    background: $white;
+    text-align: center;
+
+    @media (min-width: 375px) {
+        min-width: 450px;
+        padding: 2rem;
+    }
 }
 
 .card-hero {
-    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    width: 100%;
+    padding: 0;
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 1.4rem;
+    line-height: 1.8rem;  
+    margin-bottom: 1rem;
 }
 
 .hero-text {
-    margin-bottom: 1rem;
-    line-height: 26px;
+    color: $desaturated-blue;
     font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 1.5rem;
 }
 
-.plan-card {
+.annual-plan-card {
+    display: flex;
     background: $lightest-gray;
     border-radius: 11px;
-    align-items: center;
     justify-content: space-between;
-    padding: 25px;
-    margin: auto;
-    // width: 354px;
-    width: 100%;
-    // margin-top: 20px;
-    margin-bottom: 32px;
-    
-    .icon{
-        margin-right: 18px;
-    }
-    
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-.pc-header {
+.annual-plan-card--text {
+    display: flex;
     flex-direction: column;
-    align-items: baseline;
-    // margin: 0;
-}
 
-// @media screen and (min-width: 768px) {
-//     .bing-bong {
-//       max-width: 75%;
-//     }
-//   }
-
-@media screen and (max-width: 375px) {
-    .card {
-        max-width: 327px;
+    h2 {
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 19px;
     }
-    // max-width: 327px;
-    // justify-content: center;
+
+    p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        color: $desaturated-blue; 
+    }
 }
 
+.change-cta {
+    text-decoration: underline;
+    color: $bright-blue;
+}
+
+.annual-plan--icon {
+    margin-right: 1rem;
+}
+
+.change-cta {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17px;
+    color: $bright-blue;
+
+    &:hover,
+    &:active {
+        cursor: pointer;
+        color: $light-purple;
+        text-decoration: none;
+    }
+}
+
+.payment-cta {
+    display: flex;
+    height: 50px;
+    background: $bright-blue;
+    color: $white;
+    border-radius: 11px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    margin-bottom: 1.5rem;
+
+    &:hover,
+    &:active {
+        cursor: pointer;
+        background: $light-purple;
+    }
+}
+
+.cancel-cta {
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 20px;
+    color: $desaturated-blue;
+
+    &:hover,
+    &:active {
+        cursor: pointer;
+        color: $dark-blue;
+    }
+}
 
 
